@@ -86,3 +86,7 @@ After this on every commit check code linters and formatter will be enforced.
 
 ### C++ and CUDA
 We follow the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
+
+## Github Action
+
+关于 Githb Action 的使用可以参考 [GithubAction](docs/GithubAction.md).
