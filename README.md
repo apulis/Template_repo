@@ -30,6 +30,10 @@ README.md
 | Hotfix |	开自Master分支，主要用于修复当前已发布版本的已知bug；解决bug时注意事项参考Bugfix。这是唯一可以直接从master分支fork出来的分支。修复完成，修改应该马上合并回master分支和develop分支（当前的发布分支），master分支应该用新的版本号打好Tag。为Bug修复使用专门分支，让团队可以处理掉问题而不用打断其它工作或是等待下一个发布循环。你可以把它想成是一个直接在master分支上处理的临时发布。命名规范为：hotfix/#... |
 | Release	| 开自Develop分支，主要用于发布版本，一旦develop分支上有了做一次发布（或者说快到了既定的发布日）的足够功能，就从develop分支上fork一个发布分支。新建的分支用于开始发布循环，所以从这个时间点开始之后新的功能不能再加到这个分支上 —— 这个分支只应该做Bug修复、文档生成和其它面向发布任务。一旦对外发布的工作都完成了，执行以下三个操作：合并Release分支到Master； 给Master打上对应版本的标签tag； Release回归，这些从新建发布分支以来的做的修改要合并回develop分支。 命名规范为：release/...，...为版本号|
 
+<div align="center">
+  <img src="data/template.png" width="600"/>
+</div>
+
 
 ### Git commit 规范
 
